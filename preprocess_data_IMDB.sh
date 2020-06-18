@@ -1,0 +1,1 @@
+python preprocess_data.py --training-file ./datasets/imdb/train.txt --validation-file ./datasets/imdb/val.txt --test-file ./datasets/imdb/test.txt --data-output ./datasets/imdb

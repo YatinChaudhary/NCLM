@@ -1,0 +1,1 @@
+python preprocess_data.py --training-file ./datasets/bnc/train.txt --validation-file ./datasets/bnc/val.txt --test-file ./datasets/bnc/test.txt --data-output ./datasets/bnc
