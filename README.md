@@ -1,8 +1,8 @@
 ## About
 
-	This code consists of the implementations for the models proposed in the paper submitted: "Explainable and Discourse Topic-aware Neural Language Understanding"
+This code consists of the implementations of NCLM framework proposed in the paper titled: "Explainable and Discourse Topic-aware Neural Language Understanding" **accepted at ICML 2020 Conference**
 	
-	This code uses https://github.com/jhlau/topic_interpretability.git [1] github repository for topic coherence computations.
+This code uses https://github.com/jhlau/topic_interpretability.git [1] github repository for topic coherence computations.
 
 
 ## Requirements
