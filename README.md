@@ -108,32 +108,30 @@
 				set argument "--use-sent-topic-rep" to True
 
 
-## Directory structure for results and datasets
-
-# Experiments directory
+## Directory structure for experiments and datasets
 	
 	"model"  -->  this directory contains all saved models
 	
 	Based on the hyperparameter settings of an experiment, the following directory structure will be generated for the experiment.
 
-[Experiment directory]
-	|
-	|------ params.json         (file with hyperparameter settings saved in JSON format)
-	|
-	|------ ./model_ppl/        (directory containing model saved on the criteria of Perplexity (PPL))
-	|
-	|-------./topic_coherence/  (directory containing topic coherence [1] scores using internal (training dataset itself) and external corpus (wikipedia))
-	|
-	|------ ./logs/             (directory containing logs of model training and model reload)
-				|
-				|------ training_info.txt     (file containing negative log-likelihood loss and PPL evaluation score on "validation dataset" during training and "test dataset" after stopping criterion is acheived)
-				|
-				|------ TM_topics.txt         (file containing topics generated via NTM component)
+	[Experiment directory]
+		|
+		|------ params.json         (file with hyperparameter settings saved in JSON format)
+		|
+		|------ ./model_ppl/        (directory containing model saved on the criteria of Perplexity (PPL))
+		|
+		|-------./topic_coherence/  (directory containing topic coherence [1] scores using internal (training dataset itself) and external corpus (wikipedia))
+		|
+		|------ ./logs/             (directory containing logs of model training and model reload)
+					|
+					|------ training_info.txt     (file containing negative log-likelihood loss and PPL evaluation score on "validation dataset" during training and "test dataset" after stopping criterion is acheived)
+					|
+					|------ TM_topics.txt         (file containing topics generated via NTM component)
 
 
 ## References
 
-[1] Lau, J.H., Newman, D. and Baldwin, T., 2014, April. Machine reading tea leaves: Automatically evaluating topic coherence and topic model quality. In Proceedings of the 14th Conference of the European Chapter of the Association for Computational Linguistics (pp. 530-539).
-[2] Lau, J.H., Baldwin, T. and Cohn, T., 2017. Topically driven neural language model. arXiv preprint arXiv:1704.08012.
-[3] Mikolov, T., Chen, K., Corrado, G. and Dean, J., 2013. Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781.
-[4] Bojanowski, P., Grave, E., Joulin, A. and Mikolov, T., 2017. Enriching word vectors with subword information. Transactions of the Association for Computational Linguistics, 5, pp.135-146.
+	[1] Lau, J.H., Newman, D. and Baldwin, T., 2014, April. Machine reading tea leaves: Automatically evaluating topic coherence and topic model quality. In Proceedings of the 14th Conference of the European Chapter of the Association for Computational Linguistics (pp. 530-539).
+	[2] Lau, J.H., Baldwin, T. and Cohn, T., 2017. Topically driven neural language model. arXiv preprint arXiv:1704.08012.
+	[3] Mikolov, T., Chen, K., Corrado, G. and Dean, J., 2013. Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781.
+	[4] Bojanowski, P., Grave, E., Joulin, A. and Mikolov, T., 2017. Enriching word vectors with subword information. Transactions of the Association for Computational Linguistics, 5, pp.135-146.
